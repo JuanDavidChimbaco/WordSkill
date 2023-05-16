@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+
+{% block encabezado %}
+    {% include 'header.html' %}
+{% endblock  %}
+{% block contenido %}
+<div class="container mt-2 text-center">
+    <h2> Servicio prestamo de libros SENA</h2>
+    <div class="row d-flex justify-content-center mt-3 ">
+        <div class="col">
+            <a href="/vistaLibros/" class="btn btn-success">Registrar Libros</a>
+        </div>
+        <div class="col">
+            <a href="/vistaClientes/" class="btn btn-success">Registrar Clientes</a>
+        </div>
+        <div class="col">
+            <a href="/vistaPrestamos/" class="btn btn-success">Registrar Prestamo</a>
+        </div>
+        <div class="col">
+            <a href="/listaReporte/" class="btn btn-success"> Generar Reportes</a>
+        </div>
+    </div>
+</div>
+{% endblock%}
+{% block piePagina %}
+    {% include 'footer.html' %}
+{% endblock %}
